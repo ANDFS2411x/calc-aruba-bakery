@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora Aruba Bakery</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="estilos.css">
+<body>
+    <header class="header">
+        <div class="logo-container">
+          <img src="images/arubapng.png" alt="Logo" class="logo">
+        </div>
+        <h1>Calculadora de Repostería</h1>
+      </header>
+      
+
+  <main class="grid-container">
+    <section class="card" id="ingredientes-card">
+      <h2>Ingredientes</h2>
+      <div id="listaIngredientes"></div>
+      <button id="btnAgregar" class="btn-outline">＋ Agregar ingrediente</button>
+    </section>
+
+    <section class="card" id="extras-card">
+      <h2>Costos Extras</h2>
+      <div class="form-group">
+        <label for="manoObra">Mano de obra ($)</label>
+        <input type="number" id="manoObra" placeholder="10000">
+      </div>
+      <div class="form-group">
+        <label for="gastos">Gastos extra ($)</label>
+        <input type="number" id="gastos" placeholder="2000">
+      </div>
+      <div class="form-group">
+        <label for="margen">Margen (%)</label>
+        <input type="number" id="margen" placeholder="30">
+      </div>
+      <div id="resultado" class="resultado"></div>
+    </section>
+  </main>
+
+  <div class="action-container">
+    <button id="btnCalcular" class="btn-primary">Calcular precio</button>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Aruba Bakery Todo Los Derechos Reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
