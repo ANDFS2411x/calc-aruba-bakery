@@ -7,6 +7,8 @@ function crearIngrediente() {
   const div = document.createElement('div');
   div.className = 'ingrediente';
   div.innerHTML = `
+    <label>Nombre del ingrediente:</label>
+    <input type="text" class="nombreIngrediente" placeholder="Harina, azúcar...">
     <label>Costo paquete ($):</label>
     <input type="number" class="costoPaquete" placeholder="5000">
     <label>Cantidad total:</label>
